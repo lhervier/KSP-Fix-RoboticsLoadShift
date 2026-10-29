@@ -1,0 +1,4 @@
+obj/
+GameData/KSPFixRoboticsLoadShift/*.dll
+GameData/*.zip
+__pycache__/
