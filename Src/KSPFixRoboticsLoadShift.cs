@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using HarmonyLib;
 using UnityEngine;
 
@@ -16,7 +17,9 @@ namespace com.github.lhervier.ksp.fix.roboticsloadshift
         private void Start()
         {
             Settings.Load();
-            Log.Info($"Version {typeof(KSPFixRoboticsLoadShift).Assembly.GetName().Version}, " +
+            string version = typeof(KSPFixRoboticsLoadShift).Assembly
+                .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
+            Log.Info($"Version {version}, " +
                 $"servoStillWhilePacked {Settings.ServoStillWhilePacked}, log level {Log.Level}");
             if (!Settings.ServoStillWhilePacked)
             {
