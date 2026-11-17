@@ -3,7 +3,7 @@
     <TargetFramework>net472</TargetFramework>
     <AssemblyName>KSPFixRoboticsLoadShift</AssemblyName>
     <RootNamespace>com.github.lhervier.ksp.fix.roboticsloadshift</RootNamespace>
-    <Version>0.1.0</Version>
+    <Version>0.1.0-dev</Version>
     <Description>Keeps the moving part of a robotic part still while its vessel is packed, so that KSP Community Fixes RoboticsDrift does not shift the parts it carries when the vessel loads</Description>
     <!-- Straight into the folder that gets copied to the GameData of KSP. -->
     <OutputPath>GameData\KSPFixRoboticsLoadShift</OutputPath>
